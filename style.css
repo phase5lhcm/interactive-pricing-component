@@ -36,7 +36,7 @@ header {
 
 h1 
     { 
-    font-size: 2.2em; 
+    font-size: 2.7em; 
     font-weight: 800;
 } 
      
@@ -74,14 +74,12 @@ p
 }
 
 .header-1 {
-  width: 80%;
+  width: 65vw;
   padding: 2em 0 1em 0;
 }
 
 .header-2 {
-  width: 76%;
-  white-space: nowrap;
-  padding-left: .5em;
+  width: 53vw;
 }
 
 .background-header-circle {
