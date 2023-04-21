@@ -28,8 +28,10 @@ main {
 }
 
 header {
-  width: 60em;
+  height: 17vh;
+  width: 71vw;
   margin: 0 auto;
+  background-image: url(/images/bg-pattern.svg);
 }
 
 h1 
@@ -68,15 +70,25 @@ p
 .header-1,
 .header-2 {
   text-align: center;
+  margin: 0 auto;
 }
 
 .header-1 {
   width: 80%;
-  padding-bottom: 1em;
+  padding: 2em 0 1em 0;
 }
 
 .header-2 {
   width: 76%;
   white-space: nowrap;
   padding-left: .5em;
+}
+
+.background-header-circle {
+  background-image: url(/images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 10%;
+  height: 17vh;
+  width: 71vw;
 }
