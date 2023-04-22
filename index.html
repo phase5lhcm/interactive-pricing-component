@@ -29,8 +29,17 @@
   </header>
   <section>
 
-    Pageviews
-    $ /month
+    <div class="section-main-top">
+      <p id="productViews"> 100K PAGEVIEWS</p>
+      <p id="productPrice"> <span id="dollar-sign">$</span> <span id="price"></span> /month </p>
+    </div>
+
+    <div class="slider">
+      <input type="range" step="10" min="20" max="60" value="30" class="slider" id="myRange">
+    </div>
+
+    
+  
   
     Monthly Billing
     Yearly Billing 25% discount
@@ -48,5 +57,18 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script>
+
+    let slider = document.getElementById("myRange");
+    let output = document.getElementById("price");
+    output.innerHTML = slider.value;
+    
+    // Updates the current slider value (each time you drag the slider handle)
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+    </script>
 </body>
+
 </html>

@@ -23,7 +23,7 @@ body
 main {
   margin: 20% auto;
   height: 75vh;
-  width: 75vw;
+  width: 71vw;
   border: 5px solid red;
 }
 
@@ -89,4 +89,52 @@ p
   background-position-y: 10%;
   height: 17vh;
   width: 71vw;
+}
+
+section > .section-main-top {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#productViews, #productPrice {
+ padding: 1% 0 1% 0 ;
+}
+
+#price, #dollar-sign {
+  font-size: 2em;
+  font-weight: 800;
+}
+
+/* slider component */
+#myRange {
+  margin: 0 0 0 26%;
+  width: 63%;
+}
+.slider {
+  width: 80%;
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #04AA6D;
+  /* background: url('contrasticon.png'); */
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
 }
