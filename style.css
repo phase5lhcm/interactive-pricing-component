@@ -21,14 +21,16 @@ body
 }
 
 main {
-  margin: 20% auto;
+  margin: 0 auto;
   height: 75vh;
+  min-height: 10%;
   width: 71vw;
-  border: 5px solid red;
+  border: 2px solid orange;
 }
 
 header {
-  height: 17vh;
+  min-height: 28em;
+  height: 17.5vh;
   width: 71vw;
   margin: 0 auto;
   background-image: url(/images/bg-pattern.svg);
@@ -91,6 +93,17 @@ p
   width: 71vw;
 }
 
+section {
+  position: relative;
+  bottom: 15em;
+  border: 1px solid red;
+  margin: 0 auto;
+  width: 55vw;
+  background-color: #ffffff;
+  /* opacity: 100; */
+}
+
+
 section > .section-main-top {
   display: flex;
   justify-content: space-evenly;
@@ -101,15 +114,20 @@ section > .section-main-top {
  padding: 1% 0 1% 0 ;
 }
 
-#price, #dollar-sign {
+#price, .dollar-sign {
   font-size: 2em;
   font-weight: 800;
 }
 
+#product-month, #productViews {
+  font-size: 1.3em;
+  color: hsl(225, 20%, 60%);
+}
+
 /* slider component */
 #myRange {
-  margin: 0 0 0 26%;
-  width: 63%;
+  margin: 5% 0 0 15%;
+  width: 100%;
 }
 .slider {
   width: 80%;
@@ -140,4 +158,99 @@ section > .section-main-top {
   height: 25px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.billing-info {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin-left: 30%;
+}
+
+.billing {
+  padding-top: .5em;
+ color: hsl(225, 20%, 60%);
+ font-size: .8em;
+}
+
+.billing-text, .discount-info {
+  width: 39%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#discount {
+  display: flex;
+  align-items: center;
+  color: hsl(15, 100%, 70%);
+  background-color: hsl(15, 79%, 83%);
+  font-weight: bolder;
+  border: 1px transparent;
+  border-radius: 30px;
+  font-size: .8em;
+}
+
+/*switch styles*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 1.6em;
+} 
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+/* The slider */
+.switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+.switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  left: 4px;
+  bottom: 1.8px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .switch-slider {
+  background-color: #2196F3;
+}
+
+input:focus + .switch-slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .switch-slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}  
+
+.switch-slider.round {
+  border-radius: 34px;
+}
+
+.switch-slider.round:before {
+  border-radius: 50%;
 }
